@@ -1,46 +1,80 @@
-# Auto Create EVM Wallet
+# 🚀 EVM Wallet Generator
 
-## 🚀 About
-Auto Create EVM Wallet adalah script Python yang digunakan untuk menghasilkan dompet Ethereum Virtual Machine (EVM) secara otomatis.
-Script ini akan membuat alamat publik, private key, dan seed phrase, lalu menyimpannya ke dalam file terpisah.
+## 📜 Deskripsi
+**EVM Wallet Generator** adalah script Python untuk membuat dompet Ethereum Virtual Machine (EVM) secara otomatis. Script ini memiliki dua metode pembuatan wallet:
+1. **`main.py`** → Menggunakan library `eth_account` dan `mnemonic`.
+2. **`run.py`** → Menggunakan library `web3`.
 
-## 📌 Fitur
-- 🔹 Menghasilkan wallet EVM secara otomatis
-- 🔹 Menyimpan Public Address, Private Key, dan Seed Phrase ke file terpisah
-- 🔹 Keamanan terjamin dengan izin file khusus
-- 🔹 Mudah digunakan dengan input jumlah wallet yang ingin dibuat
+Setiap metode menghasilkan **Public Address**, **Private Key**, dan **Seed Phrase**, serta menyimpannya dalam file terpisah untuk keamanan.
 
-## 🛠 Instalasi & Penggunaan
+---
 
-### 1️⃣ Clone Repository
+## 🎯 Fitur
+✅ **Dua Metode Pembuatan Wallet** (`eth_account` & `web3`) 🔄  
+✅ **Menghindari Duplikasi Wallet** 🛑  
+✅ **Menyimpan Data ke File Terpisah** 🗂️  
+✅ **Proteksi File Private Key & Seed Phrase** 🔒  
+✅ **Mendukung Pembuatan Banyak Wallet Sekaligus** 🔢  
+
+---
+
+## 🛠️ Instalasi & Penggunaan
+
+### 1️⃣ **Clone Repository**
 ```bash
-git clone https://github.com/yourgithub/Auto-Create-EVM-Wallet.git
-cd Auto-Create-EVM-Wallet
+git clone https://github.com/mhdverel/EVM-Wallet-Generator.git
+cd EVM-Wallet-Generator
 ```
 
-### 2️⃣ Install Dependensi
+### 2️⃣ **Install Dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Jalankan Script
+### 3️⃣ **Jalankan Script**
+
+📌 **Menggunakan `eth_account` & `mnemonic` (main.py):**
 ```bash
 python3 main.py
 ```
 
-Kemudian masukkan jumlah wallet yang ingin dibuat. Semua informasi wallet akan disimpan dalam file berikut:
-- `public_address.txt` → berisi alamat publik wallet
-- `private_key.txt` → berisi private key wallet
-- `seed_phrase.txt` → berisi seed phrase wallet
+📌 **Menggunakan `web3` (run.py):**
+```bash
+python3 run.py
+```
+
+💡 **Ikuti instruksi di terminal untuk menentukan jumlah wallet yang ingin dibuat!**
+
+---
+
+## 📂 Output
+Setiap wallet yang dibuat akan disimpan dalam file berikut:
+- 📜 **public_address.txt** → Menyimpan alamat dompet publik.
+- 🔑 **private_key.txt** → Menyimpan private key (jangan dibagikan!).
+- 🔐 **seed_phrase.txt** → Menyimpan seed phrase untuk pemulihan dompet.
+
+**Pastikan Anda menyimpan file-file ini dengan aman!** 🚨
+
+---
+
+## 🔥 Contoh Hasil Wallet
+```
+Public Address: 0x1234...abcd
+Private Key: 0x5678...efgh
+Seed Phrase: word1 word2 word3 ... word12
+```
+
+---
 
 ## ⚠️ Disclaimer
-Private key dan seed phrase sangat sensitif! Jangan bagikan kepada siapa pun dan pastikan file hasilnya disimpan dengan aman.
+Script ini dibuat untuk **tujuan edukasi**. Penggunaan script ini sepenuhnya tanggung jawab pengguna. **Jangan gunakan untuk aktivitas ilegal!** 🚨
 
-## ✨ Kontribusi
-Pull request selalu diterima! Jika ada saran atau perbaikan, silakan ajukan melalui GitHub.
+---
 
-## 🔗 Kontak
-Jika ada pertanyaan atau ingin berdiskusi lebih lanjut, hubungi saya di:
-- Telegram: [Pey](https://t.me/priscow)
-- Email: mhdverel27@gmail.com
+## 👨‍💻 Author
+👤 **PEY**  
+🔗 [GitHub](https://github.com/mhdverel)  
+📩 **mhdverel@gmail.com**  
+
+🚀 **Happy Coding!** 🎉
 
