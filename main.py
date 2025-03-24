@@ -58,7 +58,7 @@ def main():
         print("✅ Public address, private key, and seed phrase are saved in separate files.")
         
         # Save to respective files
-        save_to_file("public_address.txt", public_address)
+        save_to_file("address_wallet.txt", public_address)
         save_to_file("private_key.txt", private_key)
         save_to_file("seed_phrase.txt", seed_phrase)
     
